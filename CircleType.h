@@ -6,7 +6,7 @@
 #include <cmath>
 
 class CircleType {
-private:
+protected:
     Point center;              // Center of the circle
     Point circumferencePoint;  // Point on the circumference
 
@@ -33,8 +33,7 @@ public:
     double area() const;
 
     // Print function to display radius, area, and circumference
-    void print() const;
+    virtual void print() const;
 };
 
 #endif // CIRCLE_TYPE_H
-
